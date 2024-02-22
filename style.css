@@ -1,4 +1,10 @@
-body {margin: 0px;}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+}
 
 p {
     margin-block-start: 0px;
@@ -54,20 +60,26 @@ p {
 
 .header-right {
     display: flex;
-    font-size: 18px;
-    color: #E5E7EB;
-}
-
-ul {
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
 }
 
 .header-right ul {
     display: flex;
     align-items: center;
     gap: 1em;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header-right li {
+    max-width: 90px;
+    text-align: center;
+}
+
+.header-right a {
+    text-decoration: none;
+    color: #F9FAF8;
+    font-size: 14px;
 }
 
 .header-padding {
@@ -75,6 +87,7 @@ ul {
 }
 
 .section-title {
+    scroll-margin-top: 64px;
     font-size: 36px;
     font-weight: 600;
     text-align: center;
@@ -84,14 +97,30 @@ ul {
 .card-grid {
     display: flex;
     flex-wrap: wrap;
+    max-width: 948px;
 }
 
 .card {
     width: 300px;
+    padding: 8px;
+}
+
+.card .card-text {
+    margin-block-start: 0px;
+    margin-block-end: 1em;
 }
 
 .card .small-title {
     font-weight: 600;
+}
+
+.card .img-placeholder {
+    border: solid 4px;
+    border-radius: 8px;
+    border-color: rgb(86, 86, 230);
+    width: auto;
+    height: 100px;
+    margin: 8px 0px;
 }
 
 .footer {
